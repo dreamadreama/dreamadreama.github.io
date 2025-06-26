@@ -3,7 +3,7 @@
 			html {
  				
  				margin: 0px;
- 				background: black;
+ 				background: GhostWhite;
  				scroll-behavior: smooth;
  				width: 100%;
 
@@ -12,8 +12,8 @@
 
 			body {  
   					margin: 0px;
-  					color: #FFFFFF;
-  					background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(15,15,15,1) 50%, rgba(25,25,25,1) 100%);
+  					color: GhostWhite;
+  					background: GhostWhite;
   					width:  100%;
 
 				}
