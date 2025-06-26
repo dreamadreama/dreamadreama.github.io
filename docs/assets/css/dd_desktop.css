@@ -15,7 +15,7 @@
   					color: #000000;
   					background: GhostWhite;
   					width:  100%;
-  					font-size: 2vw;
+  					font-size: auto;
 					font-family: 'Noto Sans', sans-serif;
 
 				}
@@ -44,6 +44,11 @@
 				padding-top: 4vh;
 				padding-bottom: 4vh;
 				}
+
+			.aboutheader {
+				margin: 0px;
+				padding: 1vw;
+			}
 
 			footer {
 				margin-top: 0px;
@@ -106,7 +111,7 @@
   					font-family: Noto Sans, sans-serif;
   					z-index:  2;
   					white-space: pre-wrap;
-  					font-size: 1.6vw;
+  					font-size: auto;
   					height:  auto;
 				}
 
