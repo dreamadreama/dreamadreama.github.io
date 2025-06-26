@@ -39,6 +39,7 @@
 					font-size: 2vw;
 					padding: 5px;
 					font-family: 'Noto Sans', sans-serif;
+					float: left;
 
 				}
 
@@ -184,6 +185,14 @@
 					}
 
 			*/
+
+			.bioimage {
+					display: block;
+  					width: auto;
+  					height: 50vh;
+  					margin:  auto;
+
+					}
 
 			.image {
 					display: block;
