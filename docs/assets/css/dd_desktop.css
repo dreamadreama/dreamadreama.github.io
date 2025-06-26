@@ -145,11 +145,11 @@
 
 			hr.invisible {
 					width: 33%;
-					color:  #FFFFFF;
+					color:  GhostWhite;
 					height: 0px;
 					border-width: 0;
-					color: #FFFFFF;
-					background-color: #FFFFFF;
+					color: GhostWhite;
+					background-color: GhostWhite;
 					margin: 0px;
 					padding:  0px;
 				}
