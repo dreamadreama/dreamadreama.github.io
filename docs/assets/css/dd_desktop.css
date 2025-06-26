@@ -34,7 +34,7 @@
 			    "wdth" 100;
 			}
 
-			p#text {
+			span {
 					/* width: 66%; */
 					font-size: 2vw;
 					padding: 5px;
@@ -50,13 +50,6 @@
 				width: 66%;
 				padding-top: 4vh;
 				padding-bottom: 4vh;
-				}
-
-			div.bioimage {
-				margin: 0px;
-				padding: 0px;
-				border: 0px;
-				height: auto;
 				}
 
 			footer {
@@ -191,6 +184,7 @@
   					height: 50vh;
   					margin:  auto;
   					float:  right;
+  					display: inline;
 
 					}
 
