@@ -187,10 +187,10 @@
 			*/
 
 			.bioimage {
-					display: block;
   					width: auto;
   					height: 50vh;
   					margin:  auto;
+  					float:  right;
 
 					}
 
