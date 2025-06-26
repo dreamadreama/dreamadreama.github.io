@@ -65,13 +65,13 @@
 						padding:  0px;
 						border:  0px;
 						width: 100vw;
-						height: 20vh;
+						height: auto;
 						background: GhostWhite;
 						}
 
 			h1 {
 				font-family: "Raleway", sans-serif;
-				font-size: auto;
+				font-size: 20vh;
 				margin: 0px;
 				padding:  0px;
 				font-style: normal;
