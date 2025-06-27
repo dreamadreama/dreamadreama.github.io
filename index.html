@@ -16,8 +16,11 @@
 -->
 
 <!-- Favicon and Base HREF -->
-  		<link rel="shortcut icon" type="image/png" href="favicon.png">
+<!--
   		<base href="https://dreamadreama.github.io/">
+        <link rel="shortcut icon" type="image/png" href="favicon.png">
+-->
+        <base href="file:///Users/kimbllin/hello/dreamadreama/index.html">
 
   		<title>Dreama - wallpaper installation & removal</title>
 
@@ -37,10 +40,10 @@
 		}
 
 		body {
-			margin: 0 auto;
+			margin: 0;
 			padding:  0;
 			background: transparent;
-			width: 90vw;
+			width: 100vw;
 		}
 
 		h1 {
@@ -48,7 +51,7 @@
 			font-family: Be Vietnam Pro, sans-serif;
 			font-weight: 500;
   			font-style: normal;
-			font-size: 8vw;
+			font-size: 12vh;
 			margin: 0;
 			padding: 0;
 			letter-spacing: -.7vw;
@@ -56,16 +59,67 @@
 
 		h2 {
 			text-align: center;
-			font-size: 2vw;
+			font-size: 4vh;
 			font-weight: 500;
-			margin: 0;
+			margin: 0 0 3vh 0;
 			padding: 0;
 		}
+
+        nav {
+            text-align: center;
+            display: flex;
+            width: 100vw;
+            height: 12vh;
+            align-items: center;
+            justify-content: center;
+            white-space: pre-wrap;
+            font-size: 4vh;
+			font-weight: 500;
+        }
+
+        nav a {
+            padding: 0 3vw;
+        }
+
+        div.about {
+            height: 65vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0 1vw 0 1vw;
+        }
+
+        div.header {
+            display: block;
+            border-color: #000000;
+            border-width: 0vw;
+            border-style: solid;
+            height: auto;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img.about {
+            height: 65vh;
+            float: left;
+            padding: 0;
+
+        }
 
 		p {
 			font-size: 1.5vw;
 			line-height: 2.75vw;
 			text-align: center;
+		}
+
+        p.about {
+			font-size: 1.5vw;
+			line-height: 2.75vw;
+			text-align: center;
+            padding: 0 3vw;
+            width: 48vw;
+            height: 65vh;
+            float: right;
 		}
 
 		a {
@@ -83,36 +137,29 @@
 
 	<body>
 
-		<div>
+		<div class="header" id="about">
 			<h1>Dreama</h1>
 			<h2>wallpaper installation & removal</h2>
 		</div>
 
-		<div class="aboutheader">
+		<div class="about">
 
-			<p style="width: 50%; display: inline-block; float: left;">
-				For years Corey worked with internationally recognized artists helping them realize their visions in and out of the studio. After meeting Christer of Macuna Wallpapering, her curiosity with wallpaper turned into a full-blown passion. She apprenticed with Christer for 2+ years before starting Dreama. Her keen attention to detail beautifully translates into the skillful precision required to hang a wide variety of papers.<br><br>For all questions, inquiries, and to request a free estimate, send an email to <u><a href="mailto:dreamawallpaper@gmail.com" class="email">dreamawallpaper@gmail.com</a></u> or call 612-293-9153
-			</p>
+            <img src="https://dreamadreama.github.io/docs/assets/images/1.jpg" alt="Wallpaper" title="Dreama Wallpapering" class="about">
 
-				<img src="docs/assets/images/1.jpg" alt="Wallpaper" title="Dreama Wallpapering" class="bioimage" style="style=width: 50%; display: inline-block; float: right;">
+			<p class="about" id="about">
+				For years Corey worked with internationally recognized artists helping them realize their visions in and out of the studio. After meeting Christer of Macuna Wallpapering, her curiosity with wallpaper turned into a full-blown passion. She apprenticed with Christer for 2+ years before starting Dreama. Her keen attention to detail beautifully translates into the skillful precision required to hang a wide variety of papers.<br>
+                -
+                <br>
+                <strong>For all questions, inquiries, and to request a free estimate, send an email to <u><a href="mailto:dreamawallpaper@gmail.com" class="email">dreamawallpaper@gmail.com</a></u> or call 612-293-9153</strong>
+            </p>
 
 		</div>
 
-		<center>
-		<nav style="text-align: center; display: flex; width: 100%; align-items: center; justify-content: center;"><a href="#about">About</a> <a href="#gallery">Gallery</a> <a href="#contact">Contact</a></nav>
+		<nav>
+                <a href="#about">about</a>     <a href="#gallery">gallery</a>     <a href="#contact">contact</a>
+        </nav>
 
-		<hr class="invisible" id="gallery">
-
-		<div>
-			<h2>Gallery</h2>
-
-			<p id="text">Mid-"Western" Tour 2023 - Replay Lounge 6/27/23<br>
-				Photos sourced from the Pitch KC<br>
-				Taken by Maura Dayton
-			</p>
-		</div>
-
-		<div class="row">
+		<div class="row" id="gallery">
 			<div class="column">
 			  <img src="docs/assets/images/1.jpg">
 			  <img src="docs/assets/images/1.jpg">
@@ -149,22 +196,10 @@
 			</div>
 		  </div>
 
-		  <hr class="invisible" id="contact">
-
-		<div>
-			<h2>CONTACT</h2>
-
-			<p id="text">for booking, press, and all other inquiries, please email:<br><br>
-				<i><b><a href="mailto:timeroom.band@gmail.com">timeroom.band@gmail.com</a></b></i>
-			</p>
-
-		</div>
-
-		<footer>
-			<p id="text">COPYRIGHT <a href="#top" title="top" style="margin: 0px 0px">TIME ROOM</a> 2023</p><br><br>
-		</footer>
-
-		</center>
+		<footer id="contact">
+			<p style="width: 48vw; text-align: center; margin: 0 auto;"><strong>For all questions, inquiries, and to request a free estimate, send an email to <u><a href="mailto:dreamawallpaper@gmail.com" class="email">dreamawallpaper@gmail.com</a></u> or call 612-293-9153</strong>
+            </p>
+        </footer>
 
 	</body>
 
