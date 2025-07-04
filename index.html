@@ -20,7 +20,7 @@
   		<base href="https://dreamadreama.github.io/">
         <link rel="shortcut icon" type="image/png" href="favicon.png">
 -->
-        <base href="file:///Users/kimbllin/hello/dreamadreama/index.html">
+        <base href="file:///Users/Kyle/Documents/GitHub/dreamadreama.github.io/">
 
   		<title>Dreama - wallpaper installation & removal</title>
 
@@ -31,7 +31,7 @@
   		html {
  				
  			margin: 0;
- 			background-image: linear-gradient(135deg, white, ghostwhite);
+ 			background: ghostwhite;
  			scroll-behavior: smooth;
  			width: 100%;
  			font-size: 2vw;
@@ -40,7 +40,7 @@
 		}
 
 		body {
-			margin: 0;
+			margin: 0 auto;
 			padding:  0;
 			background: transparent;
 			width: 100vw;
@@ -61,11 +61,12 @@
 			text-align: center;
 			font-size: 4vh;
 			font-weight: 500;
-			margin: 0 0 3vh 0;
+			margin: 0 0 5vh 0;
 			padding: 0;
 		}
 
         nav {
+			background-color: ghostwhite;
             text-align: center;
             display: flex;
             width: 100vw;
@@ -75,6 +76,8 @@
             white-space: pre-wrap;
             font-size: 4vh;
 			font-weight: 500;
+			position: sticky;
+			top: 0;
         }
 
         nav a {
@@ -82,12 +85,21 @@
         }
 
         div.about {
-            height: 65vh;
-            display: flex;
+            height: 63vh;
+            width: 90vw;
+			margin: 0 auto;
+			display: flex;
             justify-content: center;
             align-items: center;
-            padding: 0 1vw 0 1vw;
+          
         }
+
+		div.about2 {
+			height: 63vh;
+			display: flex;
+			justify-content: center;
+            align-items: center;
+		}
 
         div.header {
             display: block;
@@ -99,12 +111,14 @@
             align-items: center;
         }
 
-        img.about {
-            height: 65vh;
-            float: left;
-            padding: 0;
-
-        }
+		img.about {
+			max-height: 100%;
+			border-radius: 50%;
+			width: auto;
+			display: block;
+			margin: 0 auto;
+			padding: 0;
+		}
 
 		p {
 			font-size: 1.5vw;
@@ -112,15 +126,12 @@
 			text-align: center;
 		}
 
-        p.about {
-			font-size: 1.5vw;
-			line-height: 2.75vw;
-			text-align: center;
-            padding: 0 3vw;
-            width: 48vw;
-            height: 65vh;
-            float: right;
-		}
+		p.about {
+				font-size: 1.5vw;
+				line-height: 2.75vw;
+				text-align: center;
+				padding: 0 6vw;
+			}
 
 		a {
 			color: #000000;
@@ -132,74 +143,82 @@
 			cursor: pointer;
 		}
 
+/* Gallery CSS */
+
+			div.scroll-container {
+			background-color: ghostwhite;
+			overflow: auto;
+			white-space: nowrap;
+			overflow-y: hidden;
+			}
+
+			div.scroll-container img {
+			max-height: 95%;
+			border-radius: 1%;
+			}
+
 	</style>
 	</head>
 
 	<body>
 
-		<div class="header" id="about">
+		<div class="header">
 			<h1>Dreama</h1>
 			<h2>wallpaper installation & removal</h2>
 		</div>
 
 		<div class="about">
+			
+			<div class="about2" style="width: 40%;">
 
-            <img src="https://dreamadreama.github.io/docs/assets/images/3.jpg" alt="Wallpaper" title="Dreama Wallpapering" class="about">
+				<img src="https://dreamadreama.github.io/docs/assets/images/3.jpg" alt="Wallpaper" title="Dreama Wallpapering" class="about">
 
-			<p class="about" id="about">
-				For years Corey worked with internationally recognized artists helping them realize their visions in and out of the studio. After meeting Christer of Macuna Wallpapering, her curiosity with wallpaper turned into a full-blown passion. She apprenticed with Christer for 2+ years before starting Dreama. Her keen attention to detail beautifully translates into the skillful precision required to hang a wide variety of papers.<br>
-                -
-                <br>
-                <strong>For all questions, inquiries, and to request a free estimate, send an email to <u><a href="mailto:dreamawallpaper@gmail.com" class="email">dreamawallpaper@gmail.com</a></u> or call 612-293-9153</strong>
-            </p>
+			</div>
+
+			<div class="about2" style="width: 60%;">
+			
+				<p class="about" id="about">
+					For years Corey worked with internationally recognized artists helping them realize their visions in and out of the studio. After meeting Christer of Macuna Wallpapering, her curiosity with wallpaper turned into a full-blown passion. She apprenticed with Christer for 2+ years before starting Dreama. Her keen attention to detail beautifully translates into the skillful precision required to hang a wide variety of papers.<br><br>
+					<strong>For all questions, inquiries, and to request a free estimate, send an email to <u><a href="mailto:dreamawallpaper@gmail.com" class="email">dreamawallpaper@gmail.com</a></u> or call 612-293-9153</strong>
+				</p>
+			
+			</div>
 
 		</div>
 
 		<nav>
-                <a href="#about">about</a>     <a href="#gallery">gallery</a>     <a href="#contact">contact</a>
+            	<a href="index.html#about">about</a><a href="index.html#gallery">gallery</a>
         </nav>
 
-		<div class="row" id="gallery">
-			<div class="column">
+		<div class="scroll-container" style="width: 100%; height: 88vh; margin: 0 auto;" id="gallery">
 			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			</div>
-			<div class="column">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			</div>
-			<div class="column">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			</div>
-			<div class="column">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
-			  <img src="docs/assets/images/1.jpg">
+			  <img src="docs/assets/images/2.jpg">
+			  <img src="docs/assets/images/3.jpg">
+			  <img src="docs/assets/images/4.jpg">
+			  <img src="docs/assets/images/5.jpg">
+			  <img src="docs/assets/images/6.jpg">
+			  <img src="docs/assets/images/7.jpg">
+			  <img src="docs/assets/images/8.jpg">
+			  <img src="docs/assets/images/9.jpg">
+			  <img src="docs/assets/images/10.jpg">
+			  <img src="docs/assets/images/11.jpg">
+			  <img src="docs/assets/images/12.jpg">
+			  <img src="docs/assets/images/13.jpg">
+			  <img src="docs/assets/images/14.jpg">
+			  <img src="docs/assets/images/15.jpg">
+			  <img src="docs/assets/images/16.jpg">
+			  <img src="docs/assets/images/17.jpg">
+			  <img src="docs/assets/images/18.jpg">
+			  <img src="docs/assets/images/19.jpg">
+			  <img src="docs/assets/images/20.jpg">
+			  <img src="docs/assets/images/21.jpg">
+			  <img src="docs/assets/images/22.jpg">
+			  <img src="docs/assets/images/23.jpg">
+			  <img src="docs/assets/images/24.jpg">
+			  <img src="docs/assets/images/25.jpg">
+			  <img src="docs/assets/images/26.jpg">
 			</div>
 		  </div>
-
-		<footer id="contact">
-			<p style="width: 48vw; text-align: center; margin: 0 auto;"><strong>For all questions, inquiries, and to request a free estimate, send an email to <u><a href="mailto:dreamawallpaper@gmail.com" class="email">dreamawallpaper@gmail.com</a></u> or call 612-293-9153</strong>
-            </p>
-        </footer>
 
 	</body>
 
