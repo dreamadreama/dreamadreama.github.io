@@ -64,6 +64,7 @@
 			font-weight: 500;
 			margin: 0 0 5vh 0;
 			padding: 0;
+			white-space: nowrap;
 		}
 
         nav {
@@ -107,6 +108,9 @@
 			display: flex;
 			justify-content: center;
             align-items: center;
+			font-size: .95em;
+			border-radius: 50%;
+			background-image: radial-gradient(rgba(248,248,255,1),rgba(248,248,255,.9), rgba(248,248,255,0) );
 		}
 
         div.header {
@@ -135,10 +139,11 @@
 		}
 
 		p.about {
-				font-size: 1.5vw;
+				font-size: clamp(1vw, 1.5vw, 3vw);
 				line-height: 2.75vw;
 				text-align: center;
 				padding: 0 6vw;
+				border-radius: 0%;
 			}
 
 		a {
@@ -185,7 +190,7 @@
 
 			</div>
 
-			<div class="about2" style="width: 60%;">
+			<div class="about2" style="width: 60%; height: 63vh; align-items: center; background-color: linear-gradient(90deg, rgba(248,248,255,0), rgba(248,248,255,1)); border-radius: 50%;">
 			
 				<p class="about" id="about">
 					For years Corey worked with internationally recognized artists helping them realize their visions in and out of the studio. After meeting Christer of Macuna Wallpapering, her curiosity with wallpaper turned into a full-blown passion. She apprenticed with Christer for 2+ years before starting Dreama. Her keen attention to detail beautifully translates into the skillful precision required to hang a wide variety of papers.<br><br>
