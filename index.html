@@ -17,7 +17,7 @@
 
 <!-- Favicon and Base HREF -->
 
-  		<base href="https://dreamadreama.github.io/">
+  		<base href="file:///Users/Kyle/Documents/GitHub/dreamadreama.github.io/">
         <link rel="shortcut icon" type="image/png" href="favicon.png">
 
 <!--    <base href="file:///Users/Kyle/Documents/GitHub/dreamadreama.github.io/">
@@ -45,26 +45,43 @@
 			padding:  0;
 			background: transparent;
 			width: 100vw;
+			justify-content: center;
+            align-items: center;
 		}
+
+		div.header {
+			position: fixed;
+    		top:0;
+    		left:0; 
+            border-color: ghostwhite;
+            border-width: 0vw;
+            border-style: solid;
+            height: 16vh;
+			width: 100vw;
+            justify-content: center;
+            align-items: center;
+			background-color: ghostwhite;
+			padding: auto;
+			text-align: center;
+			align-content: center;
+        }
 
 		h1 {
 			text-align: center;
 			font-family: Be Vietnam Pro, sans-serif;
 			font-weight: 500;
   			font-style: normal;
-			font-size: 12vh;
-			margin: 0;
+			font-size: 6vmin;
+			margin: auto;
 			padding: 0;
-			letter-spacing: -.7vw;
+			letter-spacing: -.4vw;
 		}
 
 		h2 {
 			text-align: center;
-			font-size: 4vh;
+			font-size: 4vmin;
 			font-weight: 500;
-			margin: 0 0 5vh 0;
-			padding: 0;
-			white-space: nowrap;
+			margin: auto;
 		}
 
         nav {
@@ -72,14 +89,14 @@
             text-align: center;
             display: flex;
             width: 100vw;
-            height: 12vh;
+            height: 8vh;
             align-items: center;
             justify-content: center;
             white-space: pre-wrap;
-            font-size: 4vh;
+            font-size: 4vmin;
 			font-weight: 500;
-			position: sticky;
-			top: 0;
+			position: fixed;
+			bottom: 0px;
         }
 
         nav a {
@@ -94,55 +111,60 @@
 		}
 
         div.about {
-            height: 63vh;
-            width: 90vw;
-			margin: 0 auto;
+			height: 76vh;
+			width: 90vw;
 			display: flex;
-            justify-content: center;
-            align-items: center;
-          
-        }
-
-		div.about2 {
-			height: 63vh;
-			display: flex;
-			justify-content: center;
-            align-items: center;
+			margin: 16vh auto 0 auto;
 			font-size: .95em;
 			border-radius: 50%;
 			background-image: radial-gradient(rgba(248,248,255,1),rgba(248,248,255,.9), rgba(248,248,255,0) );
 		}
 
-        div.header {
-            display: block;
-            border-color: #000000;
-            border-width: 0vw;
-            border-style: solid;
-            height: auto;
-            justify-content: center;
+		div.about2 {
+			width: 100vw;
+			height: auto;
+			margin: 0 auto 0 auto;
+			display: flex;
+			font-size: .95em;
+			border-radius: 50%;
+			background-image: radial-gradient(rgba(248,248,255,1),rgba(248,248,255,.9), rgba(248,248,255,0) );
+		}
+
+		div.spacer {
+			width: 100vw;
+			height: 16vh;
+			justify-content: center;
             align-items: center;
-        }
+			background-color: ghostwhite;
+			padding: auto;
+			text-align: center;
+			align-content: center;
+		}
 
 		img.about {
+			/* FOR LANDSCAPE
 			max-height: 100%;
-			border-radius: 50%;
 			width: auto;
-			display: block;
+			*/
+			max-width: 100%;
+			height: auto;
+			border-radius: 50%;
 			margin: 0 auto;
 			padding: 0;
 		}
 
 		p {
 			font-size: 1.5vw;
-			line-height: 2.75vw;
+			line-height: 2.75vmax;
 			text-align: center;
 		}
 
 		p.about {
-				font-size: clamp(1vw, 1.5vw, 3vw);
-				line-height: 2.75vw;
+				font-size: 1.3vmax;
+				line-height: 3vmax;
+				width: 80vw;
+				margin: 0 auto;
 				text-align: center;
-				padding: 0 6vw;
 				border-radius: 0%;
 			}
 
@@ -163,7 +185,11 @@
 			overflow: auto;
 			white-space: nowrap;
 			overflow-y: hidden;
-			width: 100%;
+			width: 96vw;
+			height: 76vh; 
+			margin: 0 auto 8vh auto;
+			align-content: center;
+			justify-content: center;
 			}
 
 			div.scroll-container img {
@@ -172,40 +198,165 @@
 			max-width: 95%;
 			}
 
+
+
+/* Contact Form CSS */
+
+.contact-section {
+  width: 100%;
+  max-width: 40rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-intro > * + * {
+  margin-top: 1rem;
+}
+
+.contact-title {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  font-weight: 700;
+}
+
+.contact-description {
+  color: rgb(107 114 128);
+}
+
+.form-group-container {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  margin-bottom: 0.5rem;
+}
+
+.form-input,
+.form-textarea {
+  padding: 0.5rem;
+  border: 1px solid #e5e7eb;
+  display: flex;
+  height: 2.5rem;
+  width: 100%;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.form-input::placeholder,
+.form-textarea:focus-visible {
+  color: #6b7280;
+}
+
+.form-input:focus-visible,
+.form-textarea:focus-visible {
+  outline: 2px solid #2563eb;
+  outline-offset: 2px;
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: none;
+}
+
+.form-submit {
+  width: 100%;
+  margin: 1.2rem auto 0 auto;
+  background-color: ghostwhite;
+  color: #000000;
+  padding: 13px 5px;
+  border-radius: 0.375rem;
+}
+
 	</style>
 	</head>
 
 	<body>
+
+<!-- Header -->
 
 		<div class="header">
 			<h1>Dreama</h1>
 			<h2>wallpaper installation & removal</h2>
 		</div>
 
-		<div class="about">
+<!-- Hero Image -->
 			
-			<div class="about2" style="width: 40%;">
+			<div class="about">
 
 				<img src="https://dreamadreama.github.io/docs/assets/images/3.jpg" alt="Wallpaper" title="Dreama Wallpapering" class="about">
 
 			</div>
 
-			<div class="about2" style="width: 60%; height: 63vh; align-items: center; background-color: linear-gradient(90deg, rgba(248,248,255,0), rgba(248,248,255,1)); border-radius: 50%;">
+
+<div class="spacer" id="about"><h1>About</h1></div>
+<!-- About -->
+
+			<div class="about2" id="about">
 			
-				<p class="about" id="about">
-					For years Corey worked with internationally recognized artists helping them realize their visions in and out of the studio. After meeting Christer of Macuna Wallpapering, her curiosity with wallpaper turned into a full-blown passion. She apprenticed with Christer for 2+ years before starting Dreama. Her keen attention to detail beautifully translates into the skillful precision required to hang a wide variety of papers.<br><br>
-					<strong>For all questions, inquiries, and to request a free estimate, send an email to <u><a href="mailto:dreamawallpaper@gmail.com" class="email">dreamawallpaper@gmail.com</a></u> or call 612-293-9153</strong>
+				<p class="about">
+					Wallpaper undoubtedly has a transformative effect on our homes. Its rejuvenating properties are one of the many things I love about it. My interest in it was piqued after viewing a Morris & Co exhibition at the Chicago Institute of Art, a historical review of famous wallpaper designs created by one of the oldest designers. Six months later, as I began my wallcovering apprenticeship, I wished to know more about its history. Originally designed to mimic the tapestries that hung on the walls of royalty, wallpaper was a very useful way for people to brighten up their homes, especially before the advent of widespread electricity. Hundreds of years later, this rich design aesthetic continues to be just as mesmerizing. Often the wish is to bring nature into our homes with beautiful and hypnotic plant, animal, and bird designs. And sometimes to tie a room together we simply need a splash of color or to introduce a new texture. I have now been installing wallpapers of all kinds, in homes across the metro and beyond, for more than three years. My intense attention to detail brings a meticulousness to installation and removal that is unique to my years spent as an artists’ assistant, and I have every intention of deepening my love of this revered craft. Additionally, I suggest homeowners seek wallpapers with minimal environmental impacts and I keep a log of brands that are eco-friendly which I am always happy to recommend.
 				</p>
 			
 			</div>
 
-		</div>
+<div class="spacer" id="contact"><h1>Contact</h1></div>
+<!-- Contact -->
+
+		<section class="contact-section">
+			<div class="contact-intro">
+	  			<p class="about"><strong>For all questions, inquiries, and to request a free estimate, you can:</strong><br>send an email to <u><a href="mailto:dreamawallpaper@gmail.com" class="email">dreamawallpaper@gmail.com</a></u>,<br>call 612-293-9153,<br>or fill out the form below.<br>
+				</p>
+			</div>
+  
+			<form class="contact-form" action="https://api.web3forms.com/submit" method="POST">
+		
+			<input type="hidden" name="access_key" value="134fd3e4-6795-4a81-8684-201cb0afd6c1" />
+			<input type="hidden" name="subject" value="New Contact Form Submission from Web3Forms" />
+			<input type="hidden" name="from_name" value="Dreama" />
+		
+			<div class="form-group-container">
+				<div class="form-group">
+				<label for="name" class="form-label">Name</label>
+				<input id="name" name="name" class="form-input" placeholder="Your name" type="text" />
+				</div>
+				<div class="form-group">
+				<label for="email" class="form-label">Email</label>
+				<input id="email" name="email" class="form-input" placeholder="Your email" type="email" />
+				</div>
+				<div class="form-group">
+				<label for="phone" class="form-label">Phone</label>
+				<input id="phone" name="phone" class="form-input" placeholder="+1 (234) 56789" type="text" />
+				</div>
+				<div class="form-group">
+				<label for="message" class="form-label">Message</label>
+				<textarea class="form-textarea" id="message" name="message" placeholder="Your message"></textarea>
+				</div>
+			</div>
+			<button class="form-submit" type="submit">Send Message</button>
+			</form>
+		
+		</section>
+
+<!-- Nav Bar -->
 
 		<nav>
-            	<a href="index.html#about">about</a><a href="index.html#gallery">gallery</a>
+            	<a href="index.html#about">about</a><a href="index.html#contact">contact</a><a href="index.html#gallery">gallery</a>
         </nav>
 
-		<div class="scroll-container" style="width: 96vw; height: 88vh; margin: 0 auto;" id="gallery">
+		<div style="height: 5vh; margin: 0; padding: 0;"></div>
+
+<div class="spacer" id="gallery"><h1>Gallery</h1></div>
+<!-- Gallery -->
+
+		<div class="scroll-container">
 			 
 			<img src="docs/assets/images/1.jpg">
 			<img src="docs/assets/images/2.jpg">
@@ -220,19 +371,19 @@
 			<img src="docs/assets/images/11.jpg">
 			<img src="docs/assets/images/12.jpg">
 			<img src="docs/assets/images/13.jpg">
-			<img src="docs/assets/images/14.jpg">
+			<!-- <img src="docs/assets/images/14.jpg"> -->
 			<img src="docs/assets/images/15.jpg">
 			<img src="docs/assets/images/16.jpg">
 			<img src="docs/assets/images/17.jpg">
 			<img src="docs/assets/images/18.jpg">
 			<img src="docs/assets/images/19.jpg">
-			<img src="docs/assets/images/20.jpg">
+			<!-- <img src="docs/assets/images/20.jpg"> -->
 			<img src="docs/assets/images/21.jpg">
-			<img src="docs/assets/images/22.jpg">
+			<!-- <img src="docs/assets/images/22.jpg"> -->
 			<img src="docs/assets/images/23.jpg">
 			<img src="docs/assets/images/24.jpg">
 			<img src="docs/assets/images/25.jpg">
-			<img src="docs/assets/images/26.jpg">
+			<!-- <img src="docs/assets/images/26.jpg"> -->
 
 		  </div>
 
